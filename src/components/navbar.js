@@ -1,26 +1,30 @@
 import React from 'react';
 import { NavLink, useLocation } from 'react-router-dom';
 import { TiArrowBackOutline } from 'react-icons/ti';
+import { BsMic } from 'react-icons/bs';
+import { AiOutlineSetting } from 'react-icons/ai';
+import logo from '../images/logo.png';
 
 const NavBar = () => {
   const detailsNav = <TiArrowBackOutline className="goBack" />;
-  const header = 'STATS BY COUNTRY';
+  const header = 'Corona Africa Checker';
   const location = useLocation();
   const goBack = location.pathname.includes('country') ? detailsNav : '';
 
   return (
     <nav>
       <div className="nav1">
-        <NavLink exact="true" to={{ pathname: '/' }} className="link">
+        <NavLink exact="true" to={{ pathname: '/' }}>
           {goBack}
         </NavLink>
-        <h1 className="header1">COVID-19 STATS</h1>
-        <span>
-          <i className="me-4 fas fa-microphone" />
-          <i className="fas fa-cog" />
-        </span>
+        <h1 className="header1">CoviData</h1>
+        <div className="navIcons">
+          <BsMic />
+          <AiOutlineSetting />
+        </div>
       </div>
       <div className="nav2">
+        <img src={logo} alt="logo" className="logo" />
         <h1 className="header2">
           {header}
         </h1>

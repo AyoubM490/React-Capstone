@@ -1,9 +1,11 @@
+import axios from 'axios';
+
 const baseURL = 'https://disease.sh/v3/covid-19/countries';
 
 const FetchStats = async () => {
   const stats = [];
-  const response = await fetch(baseURL);
-  const responseData = await response.json();
+  const response = await axios.get(baseURL);
+  const responseData = response.data;
 
   responseData.map(({ countryInfo: { _id: id, flag }, ...data }) => {
     const covidData = {
