@@ -119,4 +119,4 @@ This project is [MIT](./MIT.md) licensed.
 - Microverse for the project inspiration.
 
 ## Live Presentation Video
-[Link] (https://www.loom.com/share/6f1be46a91fc47a0840e351d7d30bcaa?sharedAppSource=personal_library)
+[Link] (https://www.loom.com/share/216db4843366423b9c925d98df9c9098)
