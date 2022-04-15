@@ -117,3 +117,6 @@ This project is [MIT](./MIT.md) licensed.
 ## Acknowledgments
 - Nelson Sakwa on Behance for the design guideline.
 - Microverse for the project inspiration.
+
+## Live Presentation Video
+[Link] (https://www.loom.com/share/6f1be46a91fc47a0840e351d7d30bcaa?sharedAppSource=personal_library)
